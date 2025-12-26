@@ -2,28 +2,6 @@
 
 A production-ready Terraform configuration for provisioning an Ubuntu 24.04 LTS web server on AWS EC2 with security best practices.
 
-## Features
-
-✅ **Security Hardening**
-- IMDSv2 enforcement (Instance Metadata Service v2 required)
-- EBS volume encryption
-- Restricted security group rules (configurable CIDR blocks)
-- Proper SSH, HTTP, and HTTPS port management
-- Firewall (UFW) configuration
-
-✅ **Infrastructure Best Practices**
-- Modular configuration with clear separation of concerns
-- Comprehensive tagging strategy
-- Detailed CloudWatch monitoring support
-- EBS volume optimization (gp3 with encryption)
-- Cloud-init with proper logging
-
-✅ **Ease of Use**
-- Example terraform.tfvars file
-- Multiple output values for easy access
-- Template-based user data script
-- Environment-aware configuration
-
 ## Prerequisites
 
 - Terraform >= 1.0
@@ -37,7 +15,6 @@ A production-ready Terraform configuration for provisioning an Ubuntu 24.04 LTS 
 
 ```bash
 cd cloutertech-terraform
-cp terraform.tfvars.example terraform.tfvars
 ```
 
 ### 2. Configure Variables
